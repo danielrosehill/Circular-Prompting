@@ -1,6 +1,13 @@
 # Circular Prompting
 
-A prompt engineering technique for AI agents that involves iteratively repeating prompts across multiple conversation threads to manage context windows effectively.
+This repo contains a collection of notes documenting a prompt engineering method that I am experimenting with and using for long-running tasks, as well as tasks that are open-ended in nature, such as codebase optimization and quality control. The tooling is typically an AI agent CLI (Claude, Open Code, etc).
+
+The method involves repetitively running the same prompt and cutting the conversation when a task completion has been completed. Its objective is iterating towards task completion. 
+
+
+I use this everyday manually but the idealised and full implementation outlined in the planning document envisions delegating this decision-making to a planner agent responsible for cutting threads at completion checkpoints in order to prevent context degradation. 
+
+This provides an alternative method to context compaction in order to maintain coherence over long tasks that challenge even the largest context windows.
 
 ## Core Concept
 
